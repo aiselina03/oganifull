@@ -1,0 +1,322 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.container1 {
+  width: 63%;
+  margin: 20px auto;
+  font-family: sans-serif;
+}
+.container1 .grid {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+.container1 .grid .headbottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+.container1 .grid .headbottom .left .departments {
+  background-color: #7fad39;
+  color: white;
+  border: none;
+  padding: 16px 25px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container1 .grid .headbottom .left .departments .fa-solid {
+  padding: 0 10px;
+}
+.container1 .grid .headbottom .left .list {
+  opacity: 1;
+  transition: 0.5s all;
+}
+.container1 .grid .headbottom .left .list ul {
+  border: 1px solid gainsboro;
+  line-height: 35px;
+  padding: 15px 0 0 35px;
+  font-family: sans-serif;
+}
+.container1 .grid .headbottom .left .list ul li {
+  cursor: pointer;
+}
+.container1 .grid .headbottom .left .opacity {
+  opacity: 0;
+}
+.container1 .grid .heroSearchBox {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container1 .grid .heroSearchBox .main .categories {
+  background-color: white;
+  border: 1px solid gainsboro;
+  padding: 15px 35px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container1 .grid .heroSearchBox .main input {
+  background-color: white;
+  border: 1px solid gainsboro;
+  padding: 15px 35px;
+  font-size: 17px;
+}
+.container1 .grid .heroSearchBox .main input:focus {
+  outline: none;
+}
+.container1 .grid .heroSearchBox .main .search {
+  background-color: #7fad39;
+  color: white;
+  border: none;
+  padding: 17px 35px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container1 .grid .heroSearchBox .right {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 10px;
+}
+.container1 .grid .heroSearchBox .right .phone {
+  font-size: 25px;
+  color: #7fad39;
+}
+.container1 .grid .heroSearchBox .right .number small {
+  color: gray;
+}
+.container1 .grid .photo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 65px;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  background-image: url("https://preview.colorlib.com/theme/ogani/img/hero/banner.jpg.webp");
+  height: 430px;
+  font-family: sans-serif;
+  padding-top: 80px;
+  padding-left: 40px;
+}
+.container1 .grid .photo span {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #7fad39;
+}
+.container1 .grid .photo h1 {
+  font-size: 40px;
+  color: #252525;
+  line-height: 42px;
+  font-weight: 800;
+  padding: 10px 0;
+}
+.container1 .grid .photo p {
+  font-size: 16px;
+  font-family: "Cairo", sans-serif;
+  color: #6f6f6f;
+  font-weight: 400;
+  margin: 0 0 15px 0;
+}
+.container1 .grid .photo button {
+  line-height: 35px;
+  font-size: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #7fad39;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+}
+
+#our-slider {
+  width: 65%;
+  margin: 20px auto;
+}
+#our-slider .multiple-items {
+  display: flex;
+  align-items: center;
+}
+#our-slider .multiple-items .card-item {
+  position: relative;
+  width: 280px;
+  margin: 10px;
+  height: 320px;
+  cursor: pointer;
+}
+#our-slider .multiple-items .card-item img {
+  width: 100%;
+}
+#our-slider .multiple-items .card-item .text {
+  position: absolute;
+  left: 30%;
+  bottom: 50px;
+}
+#our-slider .multiple-items .card-item .text p {
+  font-size: 16px;
+  font-family: sans-serif;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+#our-slider .multiple-items i {
+  color: gray;
+  background-color: white;
+  border: 1px solid gainsboro;
+  font-size: 25px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1400px) {
+  body header .headtop {
+    display: none;
+  }
+  body header .container {
+    width: 50%;
+    margin: 20px auto;
+  }
+  body header .container .headmain ul {
+    display: none;
+  }
+  body header .container .headmain .right .fa-bars {
+    display: block;
+  }
+  body main .container1 .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .container1 .grid .headbottom .left {
+    width: 100%;
+  }
+  body main .container1 .grid .heroSearchBox {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .container1 .grid .heroSearchBox .main {
+    display: flex;
+  }
+}
+header {
+  width: 100%;
+  font-family: sans-serif;
+}
+header .headtop {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+header .headtop .left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+header .headtop .left .hello {
+  border-right: 1px solid gainsboro;
+  padding-right: 30px;
+}
+header .headtop .left .hello .fa-envelope {
+  padding-right: 10px;
+}
+header .headtop .right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+}
+header .headtop .right .icons {
+  border-right: 1px solid gainsboro;
+}
+header .headtop .right .icons .fa-brands {
+  padding-right: 10px;
+  cursor: pointer;
+}
+header .headtop .right select {
+  background-color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+}
+header .headtop .right span {
+  border-left: 1px solid gainsboro;
+}
+header .headtop .right span .fa-user {
+  padding: 0 10px;
+  cursor: pointer;
+}
+header .container {
+  width: 66%;
+  margin: 10px auto;
+}
+header .container .headmain {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  gap: 130px;
+  margin: 10px auto;
+}
+header .container .headmain img {
+  width: 150px;
+  height: 60px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+header .container .headmain ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  font-weight: 900;
+}
+header .container .headmain ul a {
+  transition: all 500ms;
+}
+header .container .headmain ul a li {
+  color: black;
+}
+header .container .headmain ul a li:hover {
+  color: #7fad39;
+}
+header .container .headmain ul a .home {
+  color: #7fad39;
+}
+header .container .headmain .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+header .container .headmain .right .fa-solid {
+  font-size: 20px;
+  cursor: pointer;
+}
+header .container .headmain .right p span {
+  color: gray;
+  margin-left: 15px;
+}
+header .container .headmain .right .fa-bars {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
